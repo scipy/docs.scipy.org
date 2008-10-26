@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+{% set title = 'Download' %}
+{% block body %}
+
+<h1>Download Scipy and Numpy Documentation</h1>
+
+<p>This documentation on this site is available for download in
+  the following formats:</p>
+
+<table>
+  <tr>
+    <td><a href="numpy/numpy-html.zip">HTML (zip)</a></td>
+    <td>ca. 3 MB</td>
+    <td>Numpy HTML documentation, packaged.</td>
+  </tr>
+  <tr>
+    <td><a href="numpy/numpy-ref.pdf">PDF (Numpy reference)</a></td>
+    <td>ca. 2 MB</td>
+    <td>Numpy reference guide, as PDF.</td>
+  </tr>
+  <tr>
+    <td><a href="numpy/numpy-user.pdf">PDF (Numpy user guide)</a></td>
+    <td>ca. 0.5 MB</td>
+    <td>Numpy's User Guide (work-in-progress) part, as PDF.</td>
+  </tr>
+  <tr>
+    <td><a href="scipy/scipy-html.zip">HTML (zip)</a></td>
+    <td>ca. 3 MB</td>
+    <td>Scipy HTML documentation, packaged.</td>
+  </tr>
+  <tr>
+    <td><a href="scipy/scipy-ref.pdf">PDF (Scipy reference)</a></td>
+    <td>ca. 2 MB</td>
+    <td>Scipy reference guide (work-in-progress), as PDF.</td>
+  </tr>
+</table>
+
+<p>Additionally, you may be interested in</p>
+
+<table>
+  <tr>
+    <td><a href="http://www.tramy.us/">Guide to Numpy</a></td>
+    <td>The original Numpy reference book, by Travis Oliphant.</td>
+  </tr>
+  <tr>
+    <td><a href="http://scipy.org/Documentation">Scipy.org website</a></td>
+    <td>Additional community-contributed documentation, tutorials,
+      examples, etc.</td>
+  </tr>
+</table>
+
+{% endblock %}
