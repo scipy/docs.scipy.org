@@ -80,9 +80,12 @@ div.document {
   background-color: rgb(230,230,230);
 }
 
-div.sphinxsidebar {
-  background-color: rgb(230,230,230);
-  overflow: hidden;
+div.sphinxsidebar ul span.linkdescr {
+  color: black;
+}
+
+div.sphinxsidebar ul li { 
+  margin-bottom: 1em;
 }
 
 div.related {
@@ -153,4 +156,13 @@ table.field-list {
 
 table.footnote td, table.footnote th {
   border: none;
+}
+
+/**
+ * Logo in the related bar
+ */
+img.related-logo { 
+  border: 0;
+  vertical-align: -18%;
+  margin-right: 0.25em;
 }
