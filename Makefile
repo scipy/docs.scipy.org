@@ -9,7 +9,7 @@ PAPER         =
 # Internal variables.
 PAPEROPT_a4     = -D latex_paper_size=a4
 PAPEROPT_letter = -D latex_paper_size=letter
-ALLSPHINXOPTS   = -d _build/doctrees $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) .
+ALLSPHINXOPTS   = -d build/doctrees $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) .
 
 .PHONY: help clean html web pickle htmlhelp latex changes linkcheck
 
@@ -22,63 +22,72 @@ help:
 	@echo "  latex     to make LaTeX files, you can set PAPER=a4 or PAPER=letter"
 	@echo "  changes   to make an overview over all changed/added/deprecated items"
 	@echo "  linkcheck to check all external links for integrity"
+	@echo "  upload USER=...  to upload results to docs.scipy.org"
 
 clean:
-	-rm -rf _build/*
+	-rm -rf build/*
 
 dist: html
-	rm -rf _build/doc
-	cp -r _build/html _build/doc
-	rm _build/doc/objects.inv
-	rm _build/doc/contents.html
-	rm _build/doc/search.html
-	rm _build/doc/searchindex.js
-	cd _build/doc && tar czf ../frontpage.tar.gz *
+	rm -rf build/dist
+	cp -r build/html build/dist
+	rm build/dist/objects.inv
+	rm build/dist/contents.html
+	rm build/dist/search.html
+	rm build/dist/searchindex.js
+	cd build/dist && tar czf ../dist.tar.gz *
+	chmod ug=rwX,o=rX -R build/dist
+	find build/dist -type d -print0 | xargs -0r chmod g+s
+
+upload:
+	@test -e build/dist || { echo "make dist is required first"; exit 1; }
+	@test output-is-fine -nt build/dist || { \
+	    echo "Review the output in build/dist, and do 'touch output-is-fine' before uploading."; exit 1; }
+	rsync -r -p build/dist/ $(USER)@docs.scipy.org:/home/docserver/www-root/doc/
 
 html:
-	mkdir -p _build/html _build/doctrees
-	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) _build/html
+	mkdir -p build/html build/doctrees
+	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) build/html
 	@echo
-	@echo "Build finished. The HTML pages are in _build/html."
+	@echo "Build finished. The HTML pages are in build/html."
 
 pickle:
-	mkdir -p _build/pickle _build/doctrees
-	$(SPHINXBUILD) -b pickle $(ALLSPHINXOPTS) _build/pickle
+	mkdir -p build/pickle build/doctrees
+	$(SPHINXBUILD) -b pickle $(ALLSPHINXOPTS) build/pickle
 	@echo
 	@echo "Build finished; now you can process the pickle files."
 
 web: pickle
 
 json:
-	mkdir -p _build/json _build/doctrees
-	$(SPHINXBUILD) -b json $(ALLSPHINXOPTS) _build/json
+	mkdir -p build/json build/doctrees
+	$(SPHINXBUILD) -b json $(ALLSPHINXOPTS) build/json
 	@echo
 	@echo "Build finished; now you can process the JSON files."
 
 htmlhelp:
-	mkdir -p _build/htmlhelp _build/doctrees
-	$(SPHINXBUILD) -b htmlhelp $(ALLSPHINXOPTS) _build/htmlhelp
+	mkdir -p build/htmlhelp build/doctrees
+	$(SPHINXBUILD) -b htmlhelp $(ALLSPHINXOPTS) build/htmlhelp
 	@echo
 	@echo "Build finished; now you can run HTML Help Workshop with the" \
-	      ".hhp project file in _build/htmlhelp."
+	      ".hhp project file in build/htmlhelp."
 
 latex:
-	mkdir -p _build/latex _build/doctrees
-	$(SPHINXBUILD) -b latex $(ALLSPHINXOPTS) _build/latex
+	mkdir -p build/latex build/doctrees
+	$(SPHINXBUILD) -b latex $(ALLSPHINXOPTS) build/latex
 	@echo
-	@echo "Build finished; the LaTeX files are in _build/latex."
+	@echo "Build finished; the LaTeX files are in build/latex."
 	@echo "Run \`make all-pdf' or \`make all-ps' in that directory to" \
 	      "run these through (pdf)latex."
 
 changes:
-	mkdir -p _build/changes _build/doctrees
-	$(SPHINXBUILD) -b changes $(ALLSPHINXOPTS) _build/changes
+	mkdir -p build/changes build/doctrees
+	$(SPHINXBUILD) -b changes $(ALLSPHINXOPTS) build/changes
 	@echo
-	@echo "The overview file is in _build/changes."
+	@echo "The overview file is in build/changes."
 
 linkcheck:
-	mkdir -p _build/linkcheck _build/doctrees
-	$(SPHINXBUILD) -b linkcheck $(ALLSPHINXOPTS) _build/linkcheck
+	mkdir -p build/linkcheck build/doctrees
+	$(SPHINXBUILD) -b linkcheck $(ALLSPHINXOPTS) build/linkcheck
 	@echo
 	@echo "Link check complete; look for any errors in the above output " \
-	      "or in _build/linkcheck/output.txt."
+	      "or in build/linkcheck/output.txt."
