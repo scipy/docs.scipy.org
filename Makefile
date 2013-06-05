@@ -31,7 +31,6 @@ dist: html
 	rm -rf build/dist
 	cp -r build/html build/dist
 	rm build/dist/objects.inv
-	rm build/dist/contents.html
 	rm build/dist/search.html
 	rm build/dist/searchindex.js
 	cd build/dist && tar czf ../dist.tar.gz *
