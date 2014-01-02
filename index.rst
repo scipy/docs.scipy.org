@@ -32,6 +32,9 @@ Welcome! This is the documentation for Numpy and Scipy.
       <p class="biglink"><a class="biglink" href="numpy/user/">Numpy User Guide (DRAFT)</a><br/>
        <span><a href="numpy/numpy-user-1.8.0.pdf">[PDF]</a></span>
       </p>
+      <p class="biglink"><a class="biglink" href="numpy-dev/f2py/">F2Py Guide</a><br/>
+       <span><a href="numpy-dev/f2py-1.8.0.pdf">[PDF]</a></span>
+      </p>
       <p class="biglink"><a class="biglink" href="scipy/reference/">Scipy Reference Guide</a><br/>
         <span><a href="scipy/scipy-html.zip">[HTML+zip]</a>,
           <a href="scipy/scipy-chm.zip">[CHM]</a>,
