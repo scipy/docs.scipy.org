@@ -117,8 +117,8 @@ Welcome! This is the documentation for Numpy and Scipy.
           <a href="scipy-dev/scipy-ref.pdf">[PDF]</a></span>
       </p>
       <p><a href="scipy-0.14.0/reference/">Scipy 0.14.0 Reference Guide</a>,
-        <span><a href="scipy-0.14.0/scipy-html.zip">[HTML+zip]</a>,
-          <a href="scipy-0.14.0/scipy-ref.pdf">[PDF]</a></span>
+        <span><a href="scipy-0.14.0/scipy-html-0.14.0.zip">[HTML+zip]</a>,
+          <a href="scipy-0.14.0/scipy-ref-0.14.0.pdf">[PDF]</a></span>
       </p>
       <p><a href="scipy-0.13.0/reference/">Scipy 0.13.0 Reference Guide</a>,
         <span><a href="scipy-0.13.0/scipy-html.zip">[HTML+zip]</a>,
