@@ -41,7 +41,8 @@ upload:
 	@test -e build/dist || { echo "make dist is required first"; exit 1; }
 	@test output-is-fine -nt build/dist || { \
 	    echo "Review the output in build/dist, and do 'touch output-is-fine' before uploading."; exit 1; }
-	rsync -r -p build/dist/ $(USER)@docs.scipy.org:/home/docserver/www-root/doc/
+	rsync -r -p build/dist/ $(USER)@docs.scipy.org:/srv/docs_scipy_org/doc/
+	ssh $(USER)@docs.scipy.org /srv/bin/fixperm-scipy_org.sh
 
 html:
 	mkdir -p build/html build/doctrees
