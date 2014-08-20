@@ -11,8 +11,6 @@ Welcome! This is the documentation for Numpy and Scipy.
 
   <table class="contentstable" align="center"><tr>
     <td width="50%">
-      <p class="biglink"><a class="biglink" href="/numpy/">Write, review and proof the documentation</a><br/>
-      </p>
       <p class="biglink"><a class="biglink" href="numpy-dev/dev/">Numpy developer guide</a><br/>
       <p class="biglink"><a class="biglink" href="scipy-dev/reference/hacking.html">Scipy developer guide</a><br/>
       </p>
