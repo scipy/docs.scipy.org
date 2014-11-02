@@ -24,11 +24,11 @@ Welcome! This is the documentation for Numpy and Scipy.
   <table class="contentstable" align="center"><tr>
     <td width="50%">
       <p class="biglink"><a class="biglink" href="numpy/reference/">Numpy Reference Guide</a><br/>
-        <span><a href="numpy/numpy-html-1.8.1.zip">[HTML+zip]</a>,
-          <a href="numpy/numpy-ref-1.8.1.pdf">[PDF]</a></span>
+        <span><a href="numpy/numpy-html-1.9.1.zip">[HTML+zip]</a>,
+          <a href="numpy/numpy-ref-1.9.1.pdf">[PDF]</a></span>
       </p>
       <p class="biglink"><a class="biglink" href="numpy/user/">Numpy User Guide (DRAFT)</a><br/>
-       <span><a href="numpy/numpy-user-1.8.1.pdf">[PDF]</a></span>
+       <span><a href="numpy/numpy-user-1.9.1.pdf">[PDF]</a></span>
       </p>
       <p class="biglink"><a class="biglink" href="numpy-dev/f2py/">F2Py Guide</a><br/>
       </p>
@@ -53,6 +53,20 @@ Welcome! This is the documentation for Numpy and Scipy.
       </p>
       <p><a href="numpy-dev/user/">Numpy (development version) User Guide (DRAFT)</a>,
         <span><a href="numpy-dev/numpy-user.pdf">[PDF]</a></span>
+      </p>
+      <p><a href="numpy-1.9.1/reference/">Numpy 1.9.1 Reference Guide</a>,
+        <span><a href="numpy-1.9.1/numpy-html-1.9.1.zip">[HTML+zip]</a>,
+          <a href="numpy-1.9.1/numpy-ref-1.9.1.pdf">[PDF]</a></span>
+      </p>
+      <p><a href="numpy-1.9.1/user/">Numpy 1.9.1 User Guide (DRAFT)</a>,
+        <span><a href="numpy-1.9.1/numpy-user-1.9.1.pdf">[PDF]</a></span>
+      </p>
+      <p><a href="numpy-1.9.0/reference/">Numpy 1.9.0 Reference Guide</a>,
+        <span><a href="numpy-1.9.0/numpy-html-1.9.0.zip">[HTML+zip]</a>,
+          <a href="numpy-1.9.0/numpy-ref-1.9.0.pdf">[PDF]</a></span>
+      </p>
+      <p><a href="numpy-1.9.0/user/">Numpy 1.9.0 User Guide (DRAFT)</a>,
+        <span><a href="numpy-1.9.0/numpy-user-1.9.0.pdf">[PDF]</a></span>
       </p>
       <p><a href="numpy-1.8.1/reference/">Numpy 1.8.1 Reference Guide</a>,
         <span><a href="numpy-1.8.1/numpy-html-1.8.1.zip">[HTML+zip]</a>,
