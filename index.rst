@@ -23,8 +23,10 @@ Welcome! This is the documentation for Numpy and Scipy.
 
   <table class="contentstable" align="center"><tr>
     <td width="50%">
+      <p class="biglink"><a class="biglink" href="numpy/">Complete Numpy Manual</a><br/>
+        <span><a href="numpy/numpy-html-1.9.1.zip">[HTML+zip]</a>
+      </p>
       <p class="biglink"><a class="biglink" href="numpy/reference/">Numpy Reference Guide</a><br/>
-        <span><a href="numpy/numpy-html-1.9.1.zip">[HTML+zip]</a>,
           <a href="numpy/numpy-ref-1.9.1.pdf">[PDF]</a></span>
       </p>
       <p class="biglink"><a class="biglink" href="numpy/user/">Numpy User Guide (DRAFT)</a><br/>
