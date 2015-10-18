@@ -126,9 +126,7 @@ Welcome! This is the documentation for Numpy and Scipy.
 
    <li class="span6">
    <div>
-      <p><a href="scipy-dev/reference/">Scipy (development version) Reference Guide</a>,
-        <span><a href="scipy-dev/scipy-html.zip">[HTML+zip]</a>,
-          <a href="scipy-dev/scipy-ref.pdf">[PDF]</a></span>
+      <p><a href="scipy-dev/reference/">Scipy (development version) Reference Guide</a>
       </p>
       <p><a href="scipy-0.16.0/reference/">Scipy 0.16.0 Reference Guide</a>,
         <span><a href="scipy-0.16.0/scipy-html-0.16.0.zip">[HTML+zip]</a>,
