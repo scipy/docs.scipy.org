@@ -24,19 +24,19 @@ Welcome! This is the documentation for Numpy and Scipy.
   <table class="contentstable" align="center"><tr>
     <td width="50%">
       <p class="biglink"><a class="biglink" href="numpy/">Complete Numpy Manual</a><br/>
-        <span><a href="numpy/numpy-html-1.10.1.zip">[HTML+zip]</a>
+        <span><a href="numpy/numpy-html-1.11.0.zip">[HTML+zip]</a>
       </p>
       <p class="biglink"><a class="biglink" href="numpy/reference/">Numpy Reference Guide</a><br/>
-          <a href="numpy/numpy-ref-1.10.1.pdf">[PDF]</a></span>
+          <a href="numpy/numpy-ref-1.11.0.pdf">[PDF]</a></span>
       </p>
       <p class="biglink"><a class="biglink" href="numpy/user/">Numpy User Guide</a><br/>
-       <span><a href="numpy/numpy-user-1.10.1.pdf">[PDF]</a></span>
+       <span><a href="numpy/numpy-user-1.11.0.pdf">[PDF]</a></span>
       </p>
       <p class="biglink"><a class="biglink" href="numpy/f2py/">F2Py Guide</a><br/>
       </p>
       <p class="biglink"><a class="biglink" href="scipy/reference/">Scipy Reference Guide</a><br/>
-        <span><a href="scipy/scipy-html-0.16.1.zip">[HTML+zip]</a>,
-          <a href="scipy/scipy-ref-0.16.1.pdf">[PDF]</a></span>
+        <span><a href="scipy/scipy-html-0.17.1.zip">[HTML+zip]</a>,
+          <a href="scipy/scipy-ref-0.17.1.pdf">[PDF]</a></span>
       </p>
     </td></tr>
   </table>
