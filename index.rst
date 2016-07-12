@@ -50,7 +50,6 @@ Welcome! This is the documentation for Numpy and Scipy.
   <div class="pull-left">
       <p><a href="numpy-dev/reference/">Numpy (development version) Reference Guide</a>,
         <span><a href="numpy-dev/numpy-html.zip">[HTML+zip]</a>,
-          <a href="numpy-dev/numpy-chm.zip">[CHM]</a>,
           <a href="numpy-dev/numpy-ref.pdf">[PDF]</a></span>
       </p>
       <p><a href="numpy-dev/user/">Numpy (development version) User Guide</a>,
@@ -135,7 +134,6 @@ Welcome! This is the documentation for Numpy and Scipy.
       </p>
       <p><a href="numpy-1.6.0/reference/">Numpy 1.6 Reference Guide</a>,
         <span><a href="numpy-1.6.0/numpy-html.zip">[HTML+zip]</a>,
-          <a href="numpy-1.6.0/numpy-chm.zip">[CHM]</a>,
           <a href="numpy-1.6.0/numpy-ref.pdf">[PDF]</a></span>
       </p>
       <p><a href="numpy-1.6.0/user/">Numpy 1.6 User Guide</a>,
@@ -143,7 +141,6 @@ Welcome! This is the documentation for Numpy and Scipy.
       </p>
       <p><a href="numpy-1.5.x/reference/">Numpy 1.5 Reference Guide</a>,
         <span><a href="numpy-1.5.x/numpy-html.zip">[HTML+zip]</a>,
-          <a href="numpy-1.5.x/numpy-chm.zip">[CHM]</a>,
           <a href="numpy-1.5.x/numpy-ref.pdf">[PDF]</a></span>
       </p>
       <p><a href="numpy-1.5.x/user/">Numpy 1.5 User Guide</a>,
@@ -228,7 +225,6 @@ Welcome! This is the documentation for Numpy and Scipy.
       </p>
       <p><a href="scipy-0.8.x/reference/">Scipy 0.8 Reference Guide</a>,
         <span><a href="scipy-0.8.x/scipy-html.zip">[HTML+zip]</a>,
-          <a href="scipy-0.8.x/scipy-chm.zip">[CHM]</a>,
           <a href="scipy-0.8.x/scipy-ref.pdf">[PDF]</a></span>
       </p>
       <p><a href="scipy-0.7.x/reference/">Scipy 0.7 Reference Guide</a>,
