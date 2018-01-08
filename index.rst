@@ -24,13 +24,13 @@ Welcome! This is the documentation for Numpy and Scipy.
   <table class="contentstable" align="center"><tr>
     <td width="50%">
       <p class="biglink"><a class="biglink" href="numpy/">Complete Numpy Manual</a><br/>
-        <span><a href="numpy/numpy-html-1.13.0.zip">[HTML+zip]</a>
+        <span><a href="numpy/numpy-html-1.14.0.zip">[HTML+zip]</a>
       </p>
       <p class="biglink"><a class="biglink" href="numpy/reference/">Numpy Reference Guide</a><br/>
-          <a href="numpy/numpy-ref-1.13.0.pdf">[PDF]</a></span>
+          <a href="numpy/numpy-ref-1.14.0.pdf">[PDF]</a></span>
       </p>
       <p class="biglink"><a class="biglink" href="numpy/user/">Numpy User Guide</a><br/>
-       <span><a href="numpy/numpy-user-1.13.0.pdf">[PDF]</a></span>
+       <span><a href="numpy/numpy-user-1.14.0.pdf">[PDF]</a></span>
       </p>
       <p class="biglink"><a class="biglink" href="numpy/f2py/">F2Py Guide</a><br/>
       </p>
@@ -54,6 +54,13 @@ Welcome! This is the documentation for Numpy and Scipy.
       </p>
       <p><a href="numpy-dev/user/">Numpy (development version) User Guide</a>,
         <span><a href="numpy-dev/numpy-user.pdf">[PDF]</a></span>
+      </p>
+      <p><a href="numpy-1.14.0/reference/">Numpy 1.14.0 Reference Guide</a>,
+        <span><a href="numpy-1.14.0/numpy-html-1.14.0.zip">[HTML+zip]</a>,
+          <a href="numpy-1.14.0/numpy-ref-1.14.0.pdf">[PDF]</a></span>
+      </p>
+      <p><a href="numpy-1.14.0/user/">Numpy 1.14.0 User Guide</a>,
+        <span><a href="numpy-1.14.0/numpy-user-1.14.0.pdf">[PDF]</a></span>
       </p>
       <p><a href="numpy-1.13.0/reference/">Numpy 1.13.0 Reference Guide</a>,
         <span><a href="numpy-1.13.0/numpy-html-1.13.0.zip">[HTML+zip]</a>,
