@@ -19,18 +19,22 @@ Welcome! This is the documentation for Numpy and Scipy.
 
 **Latest releases:**
 
+.. To add a new NumPy release, first add the content (from a numpy/numpy checkout)
+   ``cd doc; make dist && make upload USERNAME=... RELEASE=``
+   Then add a new row to the table
+
 .. raw:: html
 
   <table class="contentstable" align="center"><tr>
     <td width="50%">
       <p class="biglink"><a class="biglink" href="numpy/">Complete Numpy Manual</a><br/>
-        <span><a href="numpy/numpy-html-1.14.2.zip">[HTML+zip]</a>
+        <span><a href="numpy/numpy-html-1.14.2.zip">[HTML+zip]</a></span>
       </p>
       <p class="biglink"><a class="biglink" href="numpy/reference/">Numpy Reference Guide</a><br/>
-          <a href="numpy/numpy-ref-1.14.2.pdf">[PDF]</a></span>
+        <span><a href="numpy/numpy-ref-1.14.2.pdf">[PDF]</a></span>
       </p>
       <p class="biglink"><a class="biglink" href="numpy/user/">Numpy User Guide</a><br/>
-       <span><a href="numpy/numpy-user-1.14.2.pdf">[PDF]</a></span>
+        <span><a href="numpy/numpy-user-1.14.2.pdf">[PDF]</a></span>
       </p>
       <p class="biglink"><a class="biglink" href="numpy/f2py/">F2Py Guide</a><br/>
       </p>
@@ -48,12 +52,11 @@ Welcome! This is the documentation for Numpy and Scipy.
   <ul class="thumbnails" style="margin-left: 5%;">
   <li class="span6">
   <div class="pull-left">
-      <p><a href="numpy-dev/reference/">Numpy (development version) Reference Guide</a>,
-        <span><a href="numpy-dev/numpy-html.zip">[HTML+zip]</a>,
-          <a href="numpy-dev/numpy-ref.pdf">[PDF]</a></span>
+      <p><a href="http://www.numpy.org/devdocs/reference/">
+         Numpy (development version) Reference Guide</a> (external link)
       </p>
-      <p><a href="numpy-dev/user/">Numpy (development version) User Guide</a>,
-        <span><a href="numpy-dev/numpy-user.pdf">[PDF]</a></span>
+      <p><a href="http://www.numpy.org/devdocs/user/">
+         Numpy (development version) User Guide</a> (external link)
       </p>
       <p><a href="numpy-1.14.2/reference/">Numpy 1.14.2 Reference Guide</a>,
         <span><a href="numpy-1.14.2/numpy-html-1.14.2.zip">[HTML+zip]</a>,
