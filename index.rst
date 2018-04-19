@@ -299,7 +299,9 @@ Welcome! This is the documentation for Numpy and Scipy.
 
   <table class="contentstable" align="center"><tr>
     <td width="50%">
-      <p class="biglink"><a class="biglink" href="http://www.tramy.us/">Guide to Numpy</a><br/>
-         <span class="linkdescr">PDF book by Travis Oliphant</span></p>
+      <p class="biglink"><a class="biglink" href="_static/numpybook.pdf">Guide to Numpy</a><br/>
+         <span class="linkdescr">PDF book by Travis Oliphant (2006, free)</span></p>
+      <p class="biglink"><a class="biglink" href="https://www.amazon.com/Guide-NumPy-Travis-Oliphant-PhD/dp/151730007X/ref=sr_1_1?s=books&ie=UTF8&qid=1524109841&sr=1-1&keywords=guide+to+numpy">Guide to Numpy: 2nd Edition</a><br/>
+         <span class="linkdescr">Amazon link, paperback/ebook (2015)</span></p>
     </td></tr>
   </table>
