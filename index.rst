@@ -52,10 +52,10 @@ Welcome! This is the documentation for Numpy and Scipy.
   <ul class="thumbnails" style="margin-left: 5%;">
   <li class="span6">
   <div class="pull-left">
-      <p><a href="http://www.numpy.org/devdocs/reference/" class="extlink">
+      <p><a href="https://www.numpy.org/devdocs/reference/" class="extlink">
          Numpy (development version) Reference Guide</a>
       </p>
-      <p><a href="http://www.numpy.org/devdocs/user/" class="extlink">
+      <p><a href="https://www.numpy.org/devdocs/user/" class="extlink">
          Numpy (development version) User Guide</a>
       </p>
       <p><a href="numpy-1.14.2/reference/">Numpy 1.14.2 Reference Guide</a>,
