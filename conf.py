@@ -5,9 +5,7 @@ from datetime import date
 
 # -- General configuration -----------------------------------------------------
 
-extensions = ['sphinx.ext.intersphinx',
-              'sphinx.ext.pngmath',
-              'sphinx.ext.ifconfig']
+extensions = []
 
 templates_path = ['_templates']
 source_suffix = '.rst'
