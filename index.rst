@@ -28,19 +28,19 @@ Welcome! This is the documentation for Numpy and Scipy.
   <table class="contentstable" align="center"><tr>
     <td width="50%">
       <p class="biglink"><a class="biglink" href="numpy/">Complete Numpy Manual</a><br/>
-        <span><a href="numpy/numpy-html-1.14.5.zip">[HTML+zip]</a></span>
+        <span><a href="numpy/numpy-html-1.15.0.zip">[HTML+zip]</a></span>
       </p>
       <p class="biglink"><a class="biglink" href="numpy/reference/">Numpy Reference Guide</a><br/>
-        <span><a href="numpy/numpy-ref-1.14.5.pdf">[PDF]</a></span>
+        <span><a href="numpy/numpy-ref-1.15.0.pdf">[PDF]</a></span>
       </p>
       <p class="biglink"><a class="biglink" href="numpy/user/">Numpy User Guide</a><br/>
-        <span><a href="numpy/numpy-user-1.14.5.pdf">[PDF]</a></span>
+        <span><a href="numpy/numpy-user-1.15.0.pdf">[PDF]</a></span>
       </p>
       <p class="biglink"><a class="biglink" href="numpy/f2py/">F2Py Guide</a><br/>
       </p>
       <p class="biglink"><a class="biglink" href="scipy/reference/">Scipy Reference Guide</a><br/>
-        <span><a href="scipy/scipy-html-1.0.0.zip">[HTML+zip]</a>,
-          <a href="scipy/scipy-ref-1.0.0.pdf">[PDF]</a></span>
+        <span><a href="scipy/scipy-html-1.1.0.zip">[HTML+zip]</a>,
+          <a href="scipy/scipy-ref-1.1.0.pdf">[PDF]</a></span>
       </p>
     </td></tr>
   </table>
@@ -57,6 +57,13 @@ Welcome! This is the documentation for Numpy and Scipy.
       </p>
       <p><a href="https://www.numpy.org/devdocs/user/" class="extlink">
          Numpy (development version) User Guide</a>
+      </p>
+      <p><a href="numpy-1.15.0/reference/">Numpy 1.15.0 Reference Guide</a>,
+        <span><a href="numpy-1.15.0/numpy-html-1.15.0.zip">[HTML+zip]</a>,
+          <a href="numpy-1.15.0/numpy-ref-1.15.0.pdf">[PDF]</a></span>
+      </p>
+      <p><a href="numpy-1.15.0/user/">Numpy 1.15.0 User Guide</a>,
+        <span><a href="numpy-1.15.0/numpy-user-1.15.0.pdf">[PDF]</a></span>
       </p>
       <p><a href="numpy-1.14.5/reference/">Numpy 1.14.5 Reference Guide</a>,
         <span><a href="numpy-1.14.5/numpy-html-1.14.5.zip">[HTML+zip]</a>,
