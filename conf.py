@@ -36,7 +36,7 @@ html_sidebars = {
 }
 
 html_title = "Numpy and Scipy documentation"
-html_favicon = 'favicon.ico'
+#html_favicon = 'favicon.ico'
 html_static_path = ['_static']
 
 html_use_modindex = False
