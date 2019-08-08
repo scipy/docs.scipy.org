@@ -19,7 +19,7 @@ Welcome! This is the documentation for Numpy and Scipy.
 
 **Latest releases:**
 
-.. To add a new NumPy release, first add the content (from a numpy/numpy checkout)
+.. To add a new SciPy release, first add the content (from a scipy/scipy checkout)
    ``cd doc; make dist && make upload USERNAME=... RELEASE=``
    Then add a new row to the table
 
@@ -52,6 +52,8 @@ Welcome! This is the documentation for Numpy and Scipy.
   <ul class="thumbnails" style="margin-left: 5%;">
   <li class="span6">
   <div class="pull-left">
+      <p>For newer versions see <a href="https://www.numpy.org/doc/" class="extlink">
+         https://www.numpy.org/doc</a></p>
       <p><a href="https://www.numpy.org/devdocs/reference/" class="extlink">
          Numpy (development version) Reference Guide</a>
       </p>
