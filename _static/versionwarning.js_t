@@ -49,9 +49,10 @@ $(document).ready(function() {
 
         const canonicalUrl = canonicalPrefix[m[1]] + m[3];
         showWarning('This is documentation for an old release of ' +
-                    names[m[1]] + ' (version ' + m[2] + '). Try the ' +
-                    '<a href="' + latestUrl[m[1]] + '">latest stable ' +
-                    'release</a> (version ' + latestStable[m[1]] + ').');
+                    names[m[1]] + ' (version ' + m[2] + '). Read <a href="'
+                    + canonicalUrl + '">this page</a> in the ' +
+                    '<a href="' + latestUrl[m[1]] + '">documentation of the '
+                    + 'latest stable release</a> (version ' + latestStable[m[1]] + ').');
         addCanonicalRel(canonicalUrl);
     }
 });
