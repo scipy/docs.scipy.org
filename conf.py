@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 
 import os
+import re
+import pkg_resources
 from datetime import date
 
 # -- General configuration -----------------------------------------------------
@@ -19,6 +21,15 @@ version = ''
 release = ''
 pygments_style = 'sphinx'
 
+# -- Parse index.rst for _static/versionwarnings.js ----------------------------
+
+with open('index.rst', 'r') as f:
+    index_text = f.read()
+
+scipy_versions = set(re.findall('scipy-([0-9.]{3,})', index_text))
+scipy_latest_version = str(max(pkg_resources.parse_version(x) for x in scipy_versions))
+numpy_latest_version = '&gt; 1.17'
+
 # -- Options for HTML output ---------------------------------------------------
 
 html_theme_path = [os.path.join('scipy-sphinx-theme', '_theme')]
@@ -33,6 +44,11 @@ html_theme_options = {
 }
 html_sidebars = {
     'index': ['sitenav.html', 'searchbox.html'],
+}
+
+html_context = {
+    'SCIPY_LATEST_VERSION': scipy_latest_version,
+    'NUMPY_LATEST_VERSION': numpy_latest_version,
 }
 
 html_title = "Numpy and Scipy documentation"

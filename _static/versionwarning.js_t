@@ -1,0 +1,57 @@
+/* -*- js -*-
+ * versionwarning.js
+ *
+ * Display a warning box for obsolete doc versions, and add
+ * <link rel=canonical> to lead search engines to the right place.
+ *
+ * Docs can include this in any script via
+ *
+ * $.getScript("/doc/_static/versionwarning.js");
+ *
+ */
+
+$(document).ready(function() {
+    const latestStable = {
+        "scipy": "{{ SCIPY_LATEST_VERSION }}",
+        "numpy": "{{ NUMPY_LATEST_VERSION }}"
+    };
+    const names = {
+        "scipy": "SciPy",
+        "numpy": "NumPy"
+    };
+    const canonicalPrefix = {
+        "scipy": "https://docs.scipy.org/doc/scipy",
+        "numpy": "https://numpy.org/doc/stable"
+    };
+    const latestUrl = {
+        "scipy": "https://docs.scipy.org/doc/scipy/reference/",
+        "numpy": "https://numpy.org/doc/stable/"
+    };
+
+    const showWarning = (msg) => {
+        $('.body').prepend(
+            '<p style="padding: 1em; border: 1px solid red; background: pink;" class="versionwarning">'
+                + msg + '</p>');
+    };
+    const addCanonicalRel = (href) => {
+        $('head').append(
+            '<link rel="canonical" href="' + href + '"/>'
+        );
+    };
+
+    const pathPattern = /^\/doc\/(scipy|numpy)-([0-9.]+)(.*)/;
+    const m = location.pathname.match(pathPattern);
+
+    if (m !== null && m[2] != latestStable[m[1]]) {
+        if ($('.versionwarning').length > 0) {
+            return;
+        }
+
+        const canonicalUrl = canonicalPrefix[m[1]] + m[3];
+        showWarning('This is documentation for an old release of ' +
+                    names[m[1]] + ' (version ' + m[2] + '). Try the ' +
+                    '<a href="' + latestUrl[m[1]] + '">latest stable ' +
+                    'release</a> (version ' + latestStable[m[1]] + ').');
+        addCanonicalRel(canonicalUrl);
+    }
+});
