@@ -48,11 +48,33 @@ $(document).ready(function() {
         }
 
         const canonicalUrl = canonicalPrefix[m[1]] + m[3];
-        showWarning('This is documentation for an old release of ' +
-                    names[m[1]] + ' (version ' + m[2] + '). Read <a href="'
-                    + canonicalUrl + '">this page</a> in the ' +
-                    '<a href="' + latestUrl[m[1]] + '">documentation of the '
+
+        // Generate an URL for searching this page in stable docs, in
+        // case the canonical URL is not valid
+        let searchWords = document.title.replace(/—[^—]*$/, '').trim();
+        if (!searchWords) {
+            searchWords = document.title.trim();
+        }
+        const searchUrl = latestUrl[m[1]] + "search.html?q=" + encodeURI(searchWords);
+
+        showWarning('This is documentation for an old release of '
+                    + names[m[1]] + ' (version ' + m[2] + '). '
+                    + '<span class="versionwarning-readlink">Read <a href="'
+                    + canonicalUrl + '">this page</a></span> '
+                    + '<span class="versionwarning-searchlink" style="display: none;">Search for <a href="'
+                    + searchUrl + '">this page</a></span>'
+                    + ' in the <a href="' + latestUrl[m[1]] + '">documentation of the '
                     + 'latest stable release</a> (version ' + latestStable[m[1]] + ').');
         addCanonicalRel(canonicalUrl);
+
+        // Check if the canonical page actually exists, and if not,
+        // replace the direct link with a link to the search page
+        $.ajax({
+            url: canonicalUrl,
+            cache: true
+        }).fail(function (jqXHR, textStatus) {
+            $('.versionwarning-readlink').attr('style', 'display: none;');
+            $('.versionwarning-searchlink').attr('style', 'display: inline;');
+        });
     }
 });
