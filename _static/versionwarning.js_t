@@ -11,6 +11,7 @@
  */
 
 $(document).ready(function() {
+    const pathPattern = /^\/doc\/(scipy|numpy)-([0-9.]+)(.*)/;
     const latestStable = {
         "scipy": "{{ SCIPY_LATEST_VERSION }}",
         "numpy": "{{ NUMPY_LATEST_VERSION }}"
@@ -19,9 +20,16 @@ $(document).ready(function() {
         "scipy": "SciPy",
         "numpy": "NumPy"
     };
-    const canonicalPrefix = {
-        "scipy": "https://docs.scipy.org/doc/scipy",
-        "numpy": "https://numpy.org/doc/stable"
+    const getCanonicalUrl = (name, path) => {
+        if (name == "numpy") {
+            // Fixup Numpy URL for some pages known to be moved
+            path = path.replace("/reference/generated/numpy.random.",
+                                "/reference/random/generated/numpy.random.");
+            return "https://numpy.org/doc/stable" + path;
+        }
+        else {
+            return "https://docs.scipy.org/doc/scipy" + path;
+        }
     };
     const latestUrl = {
         "scipy": "https://docs.scipy.org/doc/scipy/reference/",
@@ -39,16 +47,14 @@ $(document).ready(function() {
         );
     };
 
-    const pathPattern = /^\/doc\/(scipy|numpy)-([0-9.]+)(.*)/;
     const m = location.pathname.match(pathPattern);
-
     if (m !== null) {
         if ($('.versionwarning').length > 0) {
             return;
         }
 
         // Always add canonical rel tag
-        const canonicalUrl = canonicalPrefix[m[1]] + m[3];
+        const canonicalUrl = getCanonicalUrl(m[1], m[3]);
         addCanonicalRel(canonicalUrl);
 
         if (m[2] != latestStable[m[1]]) {
