@@ -12,7 +12,7 @@ Welcome! This is the documentation for Numpy and Scipy.
   <table class="contentstable" align="center"><tr>
     <td width="50%">
       <p class="biglink"><a class="biglink" href="numpy/dev/">Numpy developer guide</a><br/>
-      <p class="biglink"><a class="biglink" href="scipy-dev/dev/">Scipy developer guide</a><br/>
+      <p class="biglink"><a class="biglink" href="scipy-dev/reference/dev/">Scipy developer guide</a><br/>
       </p>
     </td></tr>
   </table>
