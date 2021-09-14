@@ -61,11 +61,7 @@ Welcome! This is the documentation for Numpy and Scipy.
          Numpy (development version) User Guide</a>
       </p>
       <p><a href="numpy-1.17.0/reference/">Numpy 1.17.0 Reference Guide</a>,
-        <span><a href="numpy-1.17.0/numpy-html-1.17.0
-        
-        
-        
-        ">[HTML+zip]</a>,
+        <span><a href="numpy-1.17.0/numpy-html-1.17.0.zip">[HTML+zip]</a>,
           <a href="numpy-1.17.0/numpy-ref-1.17.0.pdf">[PDF]</a></span>
       </p>
       <p><a href="numpy-1.17.0/user/">Numpy 1.17.0 User Guide</a>,
