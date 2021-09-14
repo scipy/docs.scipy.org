@@ -34,7 +34,7 @@ Welcome! This is the documentation for Numpy and Scipy.
         <span><a href="numpy/numpy-ref-1.17.0.pdf">[PDF]</a></span>
       </p>
       <p class="biglink"><a class="biglink" href="numpy/user/">Numpy User Guide</a><br/>
-        <span><a href="numpy/numpy-user-1.17.0.pdf">[PDF]</a></span>
+        <span><a href="https://numpy.org/doc/1.21/numpy-ref.pdf">[PDF]</a></span>
       </p>
       <p class="biglink"><a class="biglink" href="numpy/f2py/">F2Py Guide</a><br/>
       </p>
