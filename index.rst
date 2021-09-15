@@ -39,8 +39,8 @@ Welcome! This is the documentation for Numpy and Scipy.
       <p class="biglink"><a class="biglink" href="numpy/f2py/">F2Py Guide</a><br/>
       </p>
       <p class="biglink"><a class="biglink" href="scipy/reference/">Scipy Reference Guide</a><br/>
-        <span><a href="scipy/scipy-html.zip">[HTML+zip]</a>,
-          <a href="scipy/scipy-ref.pdf">[PDF]</a></span>
+        <span><a href="scipy/scipy-html-1.7.1.zip">[HTML+zip]</a>, 
+          <a href="scipy/scipy-ref-1.7.1.pdf">[PDF]</a></span>
       </p>
     </td></tr>
   </table>
