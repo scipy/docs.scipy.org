@@ -35,7 +35,6 @@ $(document).ready(function() {
         "scipy": "https://docs.scipy.org/doc/scipy/reference/",
         "numpy": "https://numpy.org/doc/stable/"
     };
-    const searchUrl = "https://docs.scipy.org/doc/scipy/search.html?q=" + encodeURI(searchWords);
 
     const showWarning = (msg) => {
         $('.body, main').prepend(
@@ -67,6 +66,7 @@ $(document).ready(function() {
             if (!searchWords) {
                 searchWords = document.title.trim();
             }
+            const searchUrl = "https://docs.scipy.org/doc/scipy/search.html?q=" + encodeURI(searchWords);
 
             showWarning('This is documentation for an old release of '
                         + names[m[1]] + ' (version ' + m[2] + '). '
