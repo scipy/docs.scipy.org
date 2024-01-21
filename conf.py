@@ -27,7 +27,7 @@ with open('index.rst', 'r') as f:
     index_text = f.read()
 
 scipy_versions = set(re.findall('scipy-([0-9.]{3,})', index_text))
-scipy_latest_version = str(max(pkg_resources.parse_version(x) for x in scipy_versions))
+scipy_latest_version = str(max(pkg_resources.parse_version(x) for x in scipy_versions if not x.startswith('0.')))
 numpy_latest_version = '&gt; 1.17'
 
 # -- Options for HTML output ---------------------------------------------------
