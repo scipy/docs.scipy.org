@@ -251,6 +251,9 @@ Welcome! This is the documentation for Numpy and Scipy.
       <p><a href="scipy-1.14.0/">SciPy 1.14.0 Documentation</a>,
         <span><a href="scipy-1.14.0/scipy-html-1.14.0.zip">[HTML+zip]</a></span>
       </p>
+      <p><a href="scipy-1.13.1/">SciPy 1.13.1 Documentation</a>,
+        <span><a href="scipy-1.13.1/scipy-html-1.13.1.zip">[HTML+zip]</a></span>
+      </p>
       <p><a href="scipy-1.13.0/">SciPy 1.13.0 Documentation</a>,
         <span><a href="scipy-1.13.0/scipy-html-1.13.0.zip">[HTML+zip]</a></span>
       </p>
