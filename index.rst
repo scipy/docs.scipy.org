@@ -39,7 +39,7 @@ Welcome! This is the documentation for Numpy and Scipy.
       <p class="biglink"><a class="biglink" href="numpy/f2py/">F2Py Guide</a><br/>
       </p>
       <p class="biglink"><a class="biglink" href="scipy/">SciPy Documentation</a><br/>
-        <span><a href="scipy/scipy-html-1.15.2.zip">[HTML+zip]</a></span>
+        <span><a href="scipy/scipy-html-1.15.3.zip">[HTML+zip]</a></span>
       </p>
     </td></tr>
   </table>
@@ -247,6 +247,9 @@ Welcome! This is the documentation for Numpy and Scipy.
    <li class="span6">
    <div>
       <p><a href="scipy-dev/reference/">Scipy (development version) Reference Guide</a>
+      </p>
+      <p><a href="scipy-1.15.3/">SciPy 1.15.3 Documentation</a>,
+        <span><a href="scipy-1.15.3/scipy-html-1.15.3.zip">[HTML+zip]</a></span>
       </p>
       <p><a href="scipy-1.15.2/">SciPy 1.15.2 Documentation</a>,
         <span><a href="scipy-1.15.2/scipy-html-1.15.2.zip">[HTML+zip]</a></span>
