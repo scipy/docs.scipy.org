@@ -34,7 +34,7 @@ dist: html
 	rm build/dist/search.html
 	rm build/dist/searchindex.js
 	cd build/dist && tar czf ../dist.tar.gz *
-	chmod ug=rwX,o=rX -R build/dist
+	chmod -R ug=rwX,o=rX build/dist
 	find build/dist -type d -print0 | xargs -0r chmod g+s
 
 upload:
