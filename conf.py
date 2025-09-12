@@ -12,7 +12,7 @@ extensions = []
 templates_path = ['_templates']
 source_suffix = '.rst'
 master_doc = 'index'
-exclude_patterns = ['scipy-sphinx-theme', 'README.rst']
+exclude_patterns = ['scipy-sphinx-theme', 'README.rst', '.pixi/*']
 
 # General information about the project.
 project = u'Numpy and Scipy documentation'

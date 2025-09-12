@@ -3,3 +3,7 @@
 *~
 *.bak
 output-is-fine
+
+# pixi environments
+.pixi
+*.egg-info
