@@ -34,7 +34,7 @@ dist: html
 	rm build/dist/search.html
 	rm build/dist/searchindex.js
 	cd build/dist && tar czf ../dist.tar.gz *
-	chmod ug=rwX,o=rX -R build/dist
+	chmod -R ug=rwX,o=rX build/dist
 	find build/dist -type d -print0 | xargs -0r chmod g+s
 
 upload:
@@ -90,3 +90,6 @@ linkcheck:
 	@echo
 	@echo "Link check complete; look for any errors in the above output " \
 	      "or in build/linkcheck/output.txt."
+
+show:
+	@python -c "import webbrowser; webbrowser.open_new_tab('file://$(PWD)/build/html/index.html')"

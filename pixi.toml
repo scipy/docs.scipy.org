@@ -1,0 +1,17 @@
+[workspace]
+authors = ["Ralf Gommers <ralf.gommers@gmail.com>"]
+channels = ["conda-forge"]
+name = "docs.scipy.org"
+platforms = ["osx-arm64", "linux-64"]
+
+[tasks]
+dist = "make dist"
+html = "make html"
+show = "make show"
+upload = "make upload"
+
+[dependencies]
+python = "*"
+sphinx = "<7"  # scipy-sphinx-theme uses "style" html attribute, removed in 7.0
+make = "*"
+packaging = "*"
