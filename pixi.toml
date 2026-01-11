@@ -3,7 +3,6 @@ authors = ["Ralf Gommers <ralf.gommers@gmail.com>"]
 channels = ["conda-forge"]
 name = "docs.scipy.org"
 platforms = ["osx-arm64", "linux-64"]
-version = "0.1.0"
 
 [tasks]
 dist = "make dist"
